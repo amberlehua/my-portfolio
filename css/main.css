@@ -1,0 +1,35 @@
+/* nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875em;
+  padding: 0.625em;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+} */
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  font-family: 'Monda', sans-serif;
+}
+
+#about {
+  background-color: #77003C;
+}
+
+#contact {
+  background-color: #77003C;
+}

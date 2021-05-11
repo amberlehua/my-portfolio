@@ -1,35 +1,158 @@
-/* nav ul li {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.875em;
-  padding: 0.625em;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-} */
-ul {
-  list-style-type: none;
-}
-
-ul li a {
-  text-decoration: none;
+body {
+  color: black;
+  font-family: 'Monda', sans-serif;
+  font-size: 16px;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
-p {
-  font-family: 'Monda', sans-serif;
+h1 {
+  font-size: 50px;
 }
 
+h2 {
+  font-size: 30px;
+}
+
+span {
+  color: #77003C;
+}
+
+
+
+
+/* GRID STYLES */
+.full-width {
+  margin: 0 auto;
+  overflow: auto;
+  width: 1200px;
+}
+
+.third-width {
+  float: left;
+  text-align: center;
+  width: 400px;
+}
+
+.half-width {
+  float: left;
+  width: 600px;
+}
+
+
+
+
+/* HEADER */
+
+.nav {
+  float: right;
+  padding: 75px 25px;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  color: #000000;
+  padding-left: 20px;
+  padding-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#header p {
+  font-size: 22px;
+}
+
+#header {
+  margin-bottom: 100px;
+}
+
+#header img {
+  width: 3%;
+}
+
+/* ABOUT */
 #about {
   background-color: #77003C;
+  color: #ffffff;
+  text-align: center;
 }
+
+#about h2{
+  padding-bottom: 50px;
+}
+
+#work,
+#about {
+  padding: 100px;
+}
+
+img {
+  width: 300px;
+}
+
+.about-words {
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+.me,
+.my-work {
+  text-align: center;
+}
+
+.my-work h2 {
+  padding-bottom: 100px;
+}
+
+.about-words {
+  text-align: center;
+}
+
+
+
+
+/* WORK */
+
+#work a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+
+/* FOOTER */
+
 
 #contact {
   background-color: #77003C;
+  color: #ffffff;
+  text-align: center;
+}
+
+#contact img {
+  padding-left: 10px;
+  width: 5%;
+}
+
+#contact h2{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.copyright {
+  padding-bottom: 5px;
 }

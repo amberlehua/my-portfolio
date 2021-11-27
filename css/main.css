@@ -4,6 +4,15 @@ body {
   font-size: 16px;
 }
 
+.container {
+
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 h1,
 h2,
 h3 {
@@ -12,11 +21,15 @@ h3 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3.125em;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 span {
@@ -30,18 +43,26 @@ span {
 .full-width {
   margin: 0 auto;
   overflow: auto;
-  width: 1200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  
 }
 
 .third-width {
   float: left;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .half-width {
   float: left;
-  width: 600px;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -68,14 +89,23 @@ span {
   padding-top: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.375em
 }
 
 #header p {
-  font-size: 22px;
+  font-size: 1.375em;
 }
 
 #header {
   margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#header .full-width {
+  text-align: center;
 }
 
 #header img {
@@ -99,18 +129,19 @@ span {
 }
 
 img {
-  width: 300px;
+  width: 50%;
 }
 
 .about-words {
   margin: auto;
   text-align: center;
-  width: 500px;
+  width: 90%;
 }
 
 .me,
 .my-work {
   text-align: center;
+  clear: both;
 }
 
 .my-work h2 {
@@ -133,7 +164,6 @@ img {
 
 
 
-
 /* FOOTER */
 
 
@@ -141,6 +171,16 @@ img {
   background-color: #77003C;
   color: #ffffff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+
+}
+
+#contact p {
+  font-size: 1.375em;
 }
 
 #contact img {
@@ -155,4 +195,58 @@ img {
 
 .copyright {
   padding-bottom: 5px;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* GRID STYLES */
+  #contact {
+    flex-direction: row;
+    
+  }
+
+ 
+  #work {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+  
+  }
+
+  .third-width {
+    float: left;
+    text-align: center;
+    width: 33.3%;
+
+  }
+
+  .half-width {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+.me,
+.my-work {
+  text-align: center;
+}
+
+#contact img {
+  padding-left: 10px;
+  width: 10%;
+}
+
+
+
 }
